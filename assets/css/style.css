@@ -30,6 +30,10 @@ header, main, footer {
   position: relative;
   z-index: 1; }
 
+.notepad-site-head {
+ background-image: url('/images/blog-cover.jpg');
+ background-size : cover;}
+
 main, .notepad-share-icons, .notepad-disqus {
   background: white; }
 
@@ -76,7 +80,7 @@ main, .notepad-share-icons, .notepad-disqus {
       display: block;
       margin: 0;
       width: 100%;
-      font-size: 2.25rem;
+      font-size: 1.5rem;
       text-align: center;
       padding: 0.3125rem; }
       .notepad-blog-menu ul li a {
@@ -120,11 +124,11 @@ main, .notepad-share-icons, .notepad-disqus {
           display: inline-block;
           margin-left: 1.25rem;
           width: auto;
-          font-size: 1rem;
+          font-size: 1.5rem;
           text-align: left;
           padding: 0; }
           .notepad-blog-menu ul li a {
-            color: black;
+            color: white;
             display: inline-block;
             border-bottom: 0.1875rem solid transparent;
             width: auto;
@@ -133,9 +137,9 @@ main, .notepad-share-icons, .notepad-disqus {
               border-bottom: 0.1875rem solid #e51843; } }
 
 .notepad-site-head .notepad-site-head-menu {
-  background: white; }
+}
   .notepad-site-head .notepad-site-head-menu .notepad-blog-logo {
-    display: inline-block;
+    display: none;
     max-height: 5rem; }
     .notepad-site-head .notepad-site-head-menu .notepad-blog-logo img {
       max-height: 5rem; }
@@ -159,9 +163,6 @@ main, .notepad-share-icons, .notepad-disqus {
 .notepad-site-head .notepad-site-head-content {
   width: 100%;
   text-align: center;
-  background-color: black;
-  background-size: cover;
-  background-image: url('/images/cover3.jpg')
 }
   .notepad-site-head .notepad-site-head-content.with-bg-cover {
     background-color: rgba(0, 0, 0, 0.7); }
@@ -1069,3 +1070,7 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+  .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: white;
+  }
