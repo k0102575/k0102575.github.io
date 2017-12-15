@@ -1,6 +1,5 @@
 title:            Notepad
 description:      "안녕하세요 김승민입니다."
-logo:             logo.png
 disqus_shortname: hmfaysal
 share:            true
 dropcap:			true
@@ -11,15 +10,15 @@ url: ""
 
 # Owner/author information
 owner:
-  name:           Hossain Mohd Faysal
-  avatar:         hmfaysal.jpg
+  name:           Kim Seungmin
+  avatar:         photo.jpg
   email:          k0102575@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    안녕하세요 초보개발자 김승민입니다.
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
-  github:         k0102575
+  github: k0102575
   instagram:
   # For Google Authorship https://plus.google.com/authorship
   google_plus:

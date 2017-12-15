@@ -139,7 +139,7 @@ main, .notepad-share-icons, .notepad-disqus {
 .notepad-site-head .notepad-site-head-menu {
 }
   .notepad-site-head .notepad-site-head-menu .notepad-blog-logo {
-    display: none;
+    display: relative;
     max-height: 5rem; }
     .notepad-site-head .notepad-site-head-menu .notepad-blog-logo img {
       max-height: 5rem; }
