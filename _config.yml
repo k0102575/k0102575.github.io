@@ -1,6 +1,6 @@
 title:            Notepad
 description:      "안녕하세요 김승민입니다."
-disqus_shortname: hmfaysal
+disqus_shortname: k0102575
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -38,6 +38,8 @@ links:
     icon: home
   - title: Categories
     url: /categories
+  - title: tags
+    url: /tags
   - title: About
     url: /about
 
@@ -105,8 +107,6 @@ prose:
               value: psychology
             - name: "Interesting"
               value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
           alterable: true
       - name: "tags"
         field:

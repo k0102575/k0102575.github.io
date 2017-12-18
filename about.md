@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: about
 permalink: /about/index.html
-title: Hossain Mohd Faysal
-tags: [Hossain, Mohd, Faysal, hmfaysal]
-imagefeature: fourseasons.jpg
+title: 안녕하세요 초보개발자 김승민입니다.
+tags: [About Me]
+imagefeature: 
 chart: true
 ---

@@ -634,3 +634,8 @@ iframe {
     vertical-align: super;
     color: black;
 }
+
+.notepad-page-menu-header {
+  background-image: url('/images/blog-cover.jpg');
+  background-size : cover;
+}
