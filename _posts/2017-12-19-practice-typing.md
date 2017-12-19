@@ -4,7 +4,7 @@ title: "타자연습 게임"
 description:
 headline:
 modified: 2017-12-19
-category: Profilo
+category: portfilo
 tags: [practice]
 imagefeature:
 mathjax:
@@ -15,4 +15,4 @@ featured: true
 
 교육센터 3번째 과제였던 타자연습 게임입니다.<br><br>
 
-[결과화면]({{ site.url }}/profilo/typing/index.html)
+[결과화면]({{ site.url }}/portfilo/typing/index.html)
