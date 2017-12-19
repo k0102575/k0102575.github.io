@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.css">
+</head>
+<style>
+  #cont {
+    background-color: #399cb9;
+    margin: 10px;
+    border: 10px solid gray;
+    width: 700px;
+    height: 600px;
+    position: relative;
+  }
+
+
+  #question {
+    /*border: 1px solid black;*/
+    position: absolute;
+    width: 450px;
+    height: 120px;
+    top: 100px;
+    left: 40px;
+    display: inline-block;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+  }
+
+  #indexTime {
+    /*border: 1px solid blue;*/
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    right: 40px;
+    text-align: center;
+    font-size: 60px;
+    top: 100px;
+    border-radius: 50px;
+    background-color: MediumSpringGreen;
+    color: IndianRed;
+  }
+
+  #result {
+    /*border: 1px solid green;*/
+    position: absolute;
+    height: 150px;
+    width: 600px;
+    left: 40px;
+    bottom: 170px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  #test {
+    /*border: 1px solid yellow;*/
+    position: absolute;
+    height: 100px;
+    width: 600px;
+    left: 40px;
+    bottom: 20px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  #startBtn {
+    height: 100px;
+    width: 200px;
+    margin-left: 10px;
+    font-size: 50px;
+  }
+
+  #title {
+    margin-top: 5px;
+    background-color: #399cb9;
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    left: 10px;
+    border: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+  }
+</style>
+<body>
+  <div id="cont" class="form-group">
+  <input type="text" id="title" value="타자연습" readonly></input>
+  <input type="text" id="question" class="form-control" readonly></input>
+  <input type="text" id="indexTime" class="form-control" value="30" readonly></input>
+  <input type="text" id="result" class="form-control" readonly></input>
+  <input type="text" id="test" class="form-control" style="display:"></input>
+  </div>
+  <button id="startBtn" class="btn btn-primary">시작</button>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"></script>
+
+<script>
+
+var indexTime = document.querySelector("#indexTime"),
+    startBtn = document.querySelector("#startBtn"),
+    test = document.querySelector("#test"),
+    question = document.querySelector("#question");
+
+
+var dataList = [],
+    successList = [],
+    failList = []
+var quizCount = 0,
+    successCount = 0,
+    failCount = 0,
+    totalCount = 0,
+    timer
+
+startBtn.onclick = function(){
+  var count = 29;
+  document.getElementById("test").focus()
+  restart()
+  getData()
+  resultDisplay();
+  timer = setInterval(function() {
+    if (count == -1 ) {
+      clearInterval(timer)
+      swal(
+      '입력 시간이 끝났습니다!',
+      '',
+      'error'
+      )
+      test.style.display = "none"
+      return;
+    }
+    indexTime.value = count
+    count--;
+  }, 1000);
+}  // startBtn.onclick()
+
+test.addEventListener("keypress", function(e){
+  if(e.keyCode == 13){
+    ++quizCount
+    checkanswer()
+    resultDisplay()
+  }
+})
+
+function restart(){
+  indexTime.value = "30"
+  dataList = []
+  successList = []
+  failList = []
+  quizCount = 0
+  successCount = 0
+  failCount = 0
+  totalCount = 0
+  test.style.display = ""
+  clearInterval(timer)
+}
+
+function resultDisplay(){
+  result.value = "" + quizCount + "개의 문제중 정답:" +
+  "" + successCount + "개 오답: " + failCount + "개 입니다"
+}
+
+function getData() {
+  $.getJSON('word.json', function(data) {
+    dataList = data.question
+    totalCount = dataList.length
+    shuffle(dataList)
+    question.value = dataList[dataList.length -1]
+    })
+}
+
+function shuffle(o){
+	o.sort(function(){return 0.5-Math.random()});
+	return o;
+}
+
+function checkanswer(){
+  if(dataList[dataList.length - 1] == test.value){
+    var sucessIndex = dataList.pop()
+    successList.push(sucessIndex)
+    ++successCount
+    sucessIndex = 0
+    test.value = ""
+    if (successList.length == totalCount){
+      question.value = "Clear!!!"
+      swal(
+        '모든 문제를 끝내셨습니다!',
+        '',
+        'success'
+      )
+      test.style.display = "none"
+      clearInterval(timer)
+      return;
+    }
+    if (dataList.length == 0){
+      reQuestion()
+    }
+
+    question.value = dataList[dataList.length - 1]
+    return
+  } else {
+    var failIndex = dataList.pop()
+    failList.push(failIndex)
+    ++failCount
+    failIndex = 0
+    test.value = ""
+    if (dataList.length == 0){
+      reQuestion()
+    }
+    question.value = dataList[dataList.length - 1]
+    return
+  }
+  return
+}
+
+function reQuestion(){
+  dataList = failList
+  shuffle(dataList)
+  failList = []
+}
+
+
+</script>
+</body>
+</html>
