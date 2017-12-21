@@ -100,6 +100,8 @@ prose:
           options:
             - name: "dictionary"
               value: dictionary
+            - name: "review"
+              value: review
             - name: "portfilo"
               value: portfilo
           alterable: true
