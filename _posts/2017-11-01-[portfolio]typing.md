@@ -24,8 +24,8 @@ Electron, Json, Jquery, Sweetalert2<br>
 
 웹 화면에서는 Electron 으로는 실행이 안되어 웹화면 링크 올립니다.<br>
 
-[결과화면]({{ site.url }}/portfilo/typing/index.html)<br>
-[소스코드](https://github.com/k0102575/k0102575.github.io/blob/master/portfilo/typing/index.html)<br>
+[결과화면]({{ site.url }}/portfolio/typing/index.html)<br>
+[소스코드](https://github.com/k0102575/k0102575.github.io/blob/master/portfolio/typing/index.html)<br>
 
 
 

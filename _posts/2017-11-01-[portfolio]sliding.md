@@ -28,8 +28,8 @@ Electron 을 이용하여 실행을 하며 Electron에 관한 포스트도 작�
 4x4퍼즐입니다. 게임을 완성후 테스트를 하려는데 퍼즐을 맞추지 못하여 한참 시간이걸렸던 기억이나네요<br>
 
 
-[결과화면]({{ site.url }}/portfilo/sliding/index.html)<br>
-[소스코드](https://github.com/k0102575/k0102575.github.io/blob/master/portfilo/sliding/index.html)<br>
+[결과화면]({{ site.url }}/portfolio/sliding/index.html)<br>
+[소스코드](https://github.com/k0102575/k0102575.github.io/blob/master/portfolio/sliding/index.html)<br>
 
 
 
