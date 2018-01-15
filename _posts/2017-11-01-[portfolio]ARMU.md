@@ -17,9 +17,6 @@ featured: true
 
 # 뮤지션 매칭 서비스 <img src="{{ site.url }}/portfolio/ARMU/README%20Image/icon.png"><br>
 
-# URL
-* [ARMU](http://13.125.35.189)<br><br>
-
 ## 서비스 소개
 * 음악이 필요한 곳엔 음악을, 일이 필요한 뮤지션들에게 일거리를 연결해주는 Arbeit for Musicians (ARMU)입니다.<br><br>
 
