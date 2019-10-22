@@ -14,7 +14,7 @@ owner:
   avatar:         photo.jpg
   email:          k0102575@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    안녕하세요 초보개발자 김승민입니다.
+  description:    안녕하세요 개발자 김승민입니다.
                   틀린점이나 문의사항은 언제든지 댓글이나 연락주시면 감사하겠습니다.
   # Social networking links used in footer. Update and remove as you like.
   twitter:
