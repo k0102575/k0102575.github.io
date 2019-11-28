@@ -127,7 +127,7 @@ console.log("sampleModule.getVar() => ", sampleModule.getVar);
 
 - 결과화면
 
-<img src="{{ site.url }}/images/javascript/modulePattern/example2.png" width="900"><br>
+<img src="{{ site.url }}/images/javascript/modulepattern/example2.png" width="900"><br>
 
 #### 함수 접근 제한을 해보자
 
@@ -171,7 +171,7 @@ console.log(sampleModule.setVar);
 
 - 결과화면
 
-<img src="{{ site.url }}/images/javascript/modulePattern/example3.png" width="900"><br>
+<img src="{{ site.url }}/images/javascript/modulepattern/example3.png" width="900"><br>
 
 #### 네임 스페이스 패턴 과 의존관계 패턴을 써보자
 - code<br>
@@ -217,7 +217,7 @@ console.log("sampleAPP.sampleModule.setVar => ", sampleAPP.sampleModule.setVar);
 ```
 
 - 결과화면
-<img src="{{ site.url }}/images/javascript/modulePattern/example4.png" width="900"><br>
+<img src="{{ site.url }}/images/javascript/modulepattern/example4.png" width="900"><br>
 
 ### 참고 URL
 - [https://developer.mozilla.org/ko/docs/Glossary/IIFE](https://developer.mozilla.org/ko/docs/Glossary/IIFE)
