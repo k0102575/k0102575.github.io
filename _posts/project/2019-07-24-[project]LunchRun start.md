@@ -13,7 +13,7 @@ comments: true
 featured: true
 ---
 
-<img src="{{ site.url }}/images/lunchRun.jpeg" width="300">
+<img src="{{ site.url }}/images/project/LunchRun start/image1.jpeg" width="300">
 
 ### 시작!
 회사에서 기획자랑 토이프로젝트에 대해서 여러가지 이야기를 하던중 회사에 도움이 되는 거를 만들어보자 라는 의견이 모아졌습니다.<br>

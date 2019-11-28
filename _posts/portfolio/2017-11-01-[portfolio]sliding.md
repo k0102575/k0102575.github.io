@@ -33,4 +33,4 @@ Electron 을 이용하여 실행을 하며 Electron에 관한 포스트도 작�
 
 
 
-![sliding]({{ site.url }}/images/sliding.png)
+![sliding]({{ site.url }}/images/portfolio/sliding/sliding.png)

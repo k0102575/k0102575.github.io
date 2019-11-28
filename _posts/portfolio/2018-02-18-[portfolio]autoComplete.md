@@ -44,4 +44,4 @@ Json, Jquery, FontAwesome, http-server<br>
 [결과화면]({{ site.url }}/portfolio/autocomplete/index.html)<br>
 [소스코드](https://github.com/k0102575/k0102575.github.io/blob/master/portfolio/autocomplete/index.html)<br>
 
-![typing]({{ site.url }}/images/autocomplete.png)
+![typing]({{ site.url }}/images/portfolio/autocomplete/autocomplete.png)

@@ -13,7 +13,7 @@ comments: true
 featured: true
 ---
 
-![main]({{ site.url }}/images/12-20-201seminar.png)
+![main]({{ site.url }}/images/review/AWS201seminar/image1.png)
 
 AWS201세미나를 또 다녀왔습니다<br>
 이번 세미나 주제는 서버리스 컴퓨팅이었고 AWS의 API GateWay와 Lambda에 관한 세미나였습니다.<br>

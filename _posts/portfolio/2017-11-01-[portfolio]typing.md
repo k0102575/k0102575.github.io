@@ -29,4 +29,4 @@ Electron, Json, Jquery, Sweetalert2<br>
 
 
 
-![typing]({{ site.url }}/images/typinggame.png)
+![typing]({{ site.url }}/images/portfolio/typinggame/typinggame.png)

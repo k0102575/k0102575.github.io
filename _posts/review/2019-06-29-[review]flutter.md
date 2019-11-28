@@ -13,8 +13,8 @@ comments: true
 featured: true
 ---
 
-![flutter1]({{ site.url }}/images/seminar-flutter1.png)
-![flutter2]({{ site.url }}/images/seminar-flutter2.png)
+![flutter1]({{ site.url }}/images/review/flutter/image1.png)
+![flutter2]({{ site.url }}/images/review/flutter/image2.png)
 
 ## URL
 - [URL](https://festa.io/events/319)

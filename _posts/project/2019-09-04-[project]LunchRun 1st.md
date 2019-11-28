@@ -33,7 +33,7 @@ Trello등을 쓰면서 협업에 관하여 신경을쓸수 있는 시간이었�
 - [소스코드](https://github.com/jmt-map/Lunch_Run_Server)
 
 ### Swagger 이미지
-<img src="{{ site.url }}/images/lunchRun-swagger.png" width="800">
+<img src="{{ site.url }}/images/project/LunchRun 1st/lunchRun-swagger.png" width="800">
 
 ### Trello 이미지
-<img src="{{ site.url }}/images/lunchRun-trello.png" width="800">
+<img src="{{ site.url }}/images/project/LunchRun 1st/lunchRun-trello.png" width="800">

@@ -13,9 +13,9 @@ comments: true
 featured: true
 ---
 
-![main]({{ site.url }}/images/seminar-js1.png)
-![main]({{ site.url }}/images/seminar-js3.png)
-![main]({{ site.url }}/images/seminar-js2.png)
+![main]({{ site.url }}/images/review/es6/image1.png)
+![main]({{ site.url }}/images/review/es6/image2.png)
+![main]({{ site.url }}/images/review/es6/image3.png)
 
 ### 양재동 코드랩
 양재동 코드랩이 주관하는 자바스크립트 ES6 ~ ES8 코드랩에 참석했습니다.<br>
