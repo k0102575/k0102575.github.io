@@ -6,7 +6,7 @@ headline:
 modified: 2017-12-20
 category: review
 tags: [AWS201seminar]
-imagefeature:
+imagefeature: review.jpg
 mathjax:
 chart:
 comments: true

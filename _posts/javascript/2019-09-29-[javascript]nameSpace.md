@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Name Space"
+title: "네임 스페이스(Name Space)"
 description:
 headline:
 modified: 2019-09-29
 category: javascript
 tags: [javascript]
-imagefeature:
+imagefeature: ""
 mathjax:
 chart:
 comments: true

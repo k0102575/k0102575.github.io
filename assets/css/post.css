@@ -640,7 +640,7 @@ iframe {
   background-size : cover;
 }
 
-.language-javascript.highlighter-rouge > div.highlight > pre.highlight {
+.language-javascript.highlighter-rouge > div.highlight > pre.highlight, .language-html.highlighter-rouge > div.highlight > pre.highlight {
   background-color: #282b2e;
   padding: 15px;
 }

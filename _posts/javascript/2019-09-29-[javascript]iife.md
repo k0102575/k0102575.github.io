@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "IIFE"
+title: "즉시 실행 함수(IIFE)"
 description:
 headline:
 modified: 2019-09-29
 category: javascript
 tags: [javascript]
-imagefeature:
+imagefeature: ""
 mathjax:
 chart:
 comments: true

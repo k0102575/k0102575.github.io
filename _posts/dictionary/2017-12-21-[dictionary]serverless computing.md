@@ -6,7 +6,7 @@ headline:
 modified: 2017-12-20
 category: dictionary
 tags: [serverless computing, Micro Service, Lambda]
-imagefeature:
+imagefeature: ""
 mathjax:
 chart:
 comments: true

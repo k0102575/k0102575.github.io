@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Module Pattern"
+title: "모듈 패턴(Module Pattern)"
 description:
 headline:
 modified: 2019-09-30
 category: javascript
 tags: [Design Pattern, javascript]
-imagefeature:
+imagefeature: ""
 mathjax:
 chart:
 comments: true
