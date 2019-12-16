@@ -6,7 +6,7 @@ headline:
 modified: 2019-10-13
 category: javascript
 tags: [javascript]
-imagefeature: ""
+imagefeature: 
 mathjax:
 chart:
 comments: true
@@ -54,7 +54,7 @@ featured: true
 
 - top, middle, low Div 에 각각 클릭이벤트를 걸고서 low Div만 클릭을해보자
 - 버블링을 테스트 하기 위해서는 이벤트 리스너에 true로 설정한다.
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/capturing.html)
+- [소스코드]({{ site.url }}/html/javascript/eventDelegation/capturing.html)
 
 ```html
 <!DOCTYPE html>
@@ -108,7 +108,7 @@ document.getElementById("low").addEventListener("click", function () {
 
 - top, middle, low Div 에 각각 클릭이벤트를 걸고서 low Div만 클릭을해보자
 - 버블링을 테스트 하기 위해서는 이벤트 리스너에 false로 설정한다.
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/bubbling.html)
+- [소스코드]({{ site.url }}/html/javascript/eventDelegation/bubbling.html)
 
 ```html
 <!DOCTYPE html>
@@ -162,7 +162,7 @@ document.getElementById("low").addEventListener("click", function () {
 
 - 이벤트 캡처링 과 버블링이 같이 리스너 되어있을때 캡처링이 먼저 인 순서 인가를 확인해 보았다.
 - top 과 middle 로 된 DIV 에 이벤트를 설정하고 low DIV 를 클릭해 보았다.
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/delegate.html)
+- [소스코드]({{ site.url }}/html/javascript/eventDelegation/delegate.html)
 
 ```html
 <!DOCTYPE html>
@@ -219,7 +219,7 @@ document.getElementById("middle").addEventListener("click", function () {
 - 이벤트를 전파중에 엘리먼트가 삭제 되거나 변경이 되면 이벤트 전파는 어떻게 될까 테스트해 보았다.
 - 우선 이벤트 캡처 단계중 middle 로 된 div 를 삭제 하는 코드를 넣고 다시 low DIV 를 클릭해보았다.
 
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/delete.html)
+- [소스코드]({{ site.url }}/html/javascript/eventDelegation/delete.html)
 
 ```html
 <!DOCTYPE html>

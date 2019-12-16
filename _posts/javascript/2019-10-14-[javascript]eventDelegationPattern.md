@@ -38,7 +38,7 @@ featured: true
 
 - 엑셀을 만든다고 가정하고 cell을 2064개 생성후 각각에 cell 에 이벤트를 설정해보자
 - 그리고 생성된 페이지의 메모리의 Event 리스너 메모리 사이즈를 확인해보자
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/notDelegation.html)
+- [소스코드]({{ site.url }}/html/javascript/eventDelegationPattern/notDelegation.html)
 
 ```html
 <!DOCTYPE html>
@@ -86,7 +86,7 @@ for(var i = 1; i < 2065; i++) {
 
 - cell에 각각 설정된 이벤트를 지우고 wrapper DIV에 이벤트를 설정해보자 이것이 이벤트 델리게이션 패턴이다.
 - 생성된 페이지의 메모리의 Event 리스터 메모리 사이즈를 확인해보자
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/delegation.html)
+- [소스코드]({{ site.url }}/html/javascript/eventDelegationPattern/delegation.html)
 
 ```html
 <!DOCTYPE html>

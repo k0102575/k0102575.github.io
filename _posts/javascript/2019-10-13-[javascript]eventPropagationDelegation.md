@@ -6,7 +6,7 @@ headline:
 modified: 2019-10-13
 category: javascript
 tags: [javascript]
-imagefeature: ""
+imagefeature: 
 mathjax:
 chart:
 comments: true
@@ -40,7 +40,7 @@ return false
 
 - 먼저 기존의 코드의 span 을 a 태그로 변경하고 a 태그의 href 에 javascript 함수 이벤트를 설정해 놓는다.
 - preventDefault() 를 설정하지 않는 태그와 설정 한 태그의 차례로 눌러 결과를 확인해 본다.
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/preventDefault.html)
+- [소스코드]({{ site.url }}/html/javascript/eventPropagationDelegation/preventDefault.html)
 
 ```html
 <!DOCTYPE html>
@@ -92,7 +92,7 @@ document.getElementById("setPrevent").addEventListener("click", function (event)
 
 #### 1) 이벤트 버블링 에서의 stopPropagation를 확인해 보자 
 - event 전파 단계의 코드 마지막 low 에 stopPropation()을 설정하고  low DIV를 클릭해 다음단계인 버블링이 전파 되는지 확인해보자.
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/stopPropagation.html)
+- [소스코드]({{ site.url }}/html/javascript/eventPropagationDelegation/stopPropagation.html)
 
 ```html
 <!DOCTYPE html>
@@ -148,7 +148,7 @@ document.getElementById("middle").addEventListener("click", function () {
 #### 2) 버블링의 전파 중지를 알아보았으니 캡처링도 전파가 중단 되는것을 알아보자
 
 - 기존의 event 전파 단계의 코드 최상위 top 에 stopPropagation()을 설정하고 low DIV를 클릭해 다음단계인 캡처링이 전파되는지 확인해보자
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/stopPropagation2.html)
+- [소스코드]({{ site.url }}/html/javascript/eventPropagationDelegation/stopPropagation2.html)
 
 ```html
 <!DOCTYPE html>
@@ -206,7 +206,7 @@ document.getElementById("middle").addEventListener("click", function () {
 - 우선 기존의 event 전파 단계에서 캡처링 단계를 지우고 low를 2개를 만든다.
 - 그리고 각각의 low에 2개씩의 이벤트를 설정하고 low1은 stopPropagation을 low2는 stopImmediatepropagation을 설정해보자
 - low1을 클릭하고 low2를 클릭했을때 차이점을 확인해 보자.
-- [소스코드](https://github.com/k0102575/studyPrepare/blob/master/%234_EventDelegationPattern/stopImmediatePropagation.html)
+- [소스코드]({{ site.url }}/html/javascript/eventPropagationDelegation/stopImmediatePropagation.html)
 
 ```html
 <!DOCTYPE html>

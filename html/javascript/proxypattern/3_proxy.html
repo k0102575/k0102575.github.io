@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    body {margin:0px;}
+    #wrapper {height: 100vh;width: 100vw;padding: 30px;box-sizing: border-box;}
+    #wrapper div {border: 1px solid black;width: 150px;height: 150px;float: left;display: flex;justify-content: center; align-items: center;}
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <div id='id1'><span>id1</span></div>
+    <div id='id2'><span>id2</span></div>
+    <div id='id3'><span>id3</span></div>
+    <div id='count'><span>조회수</span></div>
+</div>
+<script>
+
+function User() {
+    this.data = {
+        'id1': 'A이름',
+        'id2': 'B이름',
+        'id3': 'C이름'
+    };
+}
+User.prototype.get = function(id, callback) {
+    var self = this;
+    setTimeout(function() {
+        callback(self.data[id]);
+    }, 500);
+}
+function UserProxy() {
+    var user = new User();
+    var viewCount = 0;
+    var cache = {};
+    return {
+        get: function(id, callback) {
+            viewCount++;
+
+            if (cache[id]) {
+
+                // 캐쉬가 되어있는 그냥객체의 정보를 가져오는 과정
+                callback(cache[id]);
+            } else {
+
+                // 서버에서 받아오는 과정
+                user.get(id, function(name) {
+                    cache[id] = name;
+                    callback(name);
+                });
+            }
+        },
+        getViewCount: function() {
+            return viewCount;
+        }
+    };
+}
+
+var divControlPanel = document.getElementById("wrapper"),
+    userProxy = new UserProxy();
+
+divControlPanel.addEventListener("click",function(e){
+    var target = e.target || e.srcElement;
+    if(target.id == "count") {
+        console.log(userProxy.getViewCount())
+    } else {
+        userProxy.get(target.id, (name) => console.log(name))
+    }
+},true);
+</script>
+</body>
+</html>
