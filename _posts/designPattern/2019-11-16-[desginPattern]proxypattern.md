@@ -4,8 +4,8 @@ title: "프록시 패턴(Proxy Pattern)"
 description:
 headline:
 modified: 2019-11-16
-category: javascript
-tags: [javascript, Design Pattern]
+category: Design Pattern
+tags: [Design Pattern]
 imagefeature:
 mathjax:
 chart:
@@ -19,7 +19,7 @@ featured: true
     * 쉽게 말하면 중개자라는 의미로 사용이 된다.<br><br>
 
 - 이미지
-    * <img src="{{ site.url }}/images/javascript/proxyPattern/image.png" width="450"><br>
+    * <img src="{{ site.url }}/images/designPattern/proxyPattern/image.png" width="450"><br>
     * 위에 이미지는 웹 서버 환경에서의 프록시 서버를 나타내는 이미지이다.<br><br>
 
 - 프록시의 위치
@@ -38,7 +38,7 @@ featured: true
 
 - 델리게이션 패턴으로 이루 어진 코드에 프록시 패턴을 적용 하여 코드 유지보수 측면에 있어서 어떠한 장점이 있는지 알아보자.
 - 프록시 패턴 적용전
-    - [소스코드]({{ site.url }}/html/javascript/proxypattern/1_notProxy.html)
+    - [소스코드]({{ site.url }}/html/designPattern/proxypattern/1_notProxy.html)
 
 ```javascript
 var divControlPanel = document.getElementById("wrapper")
@@ -64,7 +64,7 @@ divControlPanel.addEventListener("click",function(e){
     클릭 이벤트 핸들러에서 모든 것을 처리 하여야 한다.
 - 그러면 프록시 패턴을 적용하기 위해 proxyClickEventHandler 클릭 이벤트 변수를 하나 추가 하여 클릭이벤트에서 해당 객체의 프로퍼티를 접근 하게 해보자.
 - 프록시 패턴 적용후
-    - [소스코드]({{ site.url }}/html/javascript/proxypattern/1_proxy.html)
+    - [소스코드]({{ site.url }}/html/designPattern/proxypattern/1_proxy.html)
 
 ```javascript
 var divControlPanel = document.getElementById("wrapper"),
@@ -100,7 +100,7 @@ divControlPanel.addEventListener("click",function(e){
 
 #### 프록시 패턴 적용전
 - 기본적인 자바 스크립트 에서의 유저 데이터 객체를 만들어보자
-- [소스코드]({{ site.url }}/html/javascript/proxypattern/2_notProxy.html)
+- [소스코드]({{ site.url }}/html/designPattern/proxypattern/2_notProxy.html)
 
 ```javascript
 function User() {
@@ -133,7 +133,7 @@ divControlPanel.addEventListener("click",function(e){
 - 이런 경우에 프록시 패턴을 적용하여 사이드 이펙트를 방지해 보자.
 
 #### 프록시 패턴 적용후
-- [소스코드]({{ site.url }}/html/javascript/proxypattern/2_proxy.html)
+- [소스코드]({{ site.url }}/html/designPattern/proxypattern/2_proxy.html)
 
 ```javascript
 function User() {
@@ -188,7 +188,7 @@ divControlPanel.addEventListener("click",function(e){
 
 - 데이터를 받아 온다고 가정한 1초의 시간은 상당히 길다. 또한 이렇게 서버 혹은 API에 관란 잦은 요청은 지향하여야 한다.
 - 캐시 기능을 이용하기 위해 프록시 패턴에 추가해 보자
-- [소스코드]({{ site.url }}/html/javascript/proxypattern/3_proxy.html)
+- [소스코드]({{ site.url }}/html/designPattern/proxypattern/3_proxy.html)
 
 ```javascript
 

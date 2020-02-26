@@ -5,7 +5,7 @@ description:
 headline:
 modified: 2019-09-30
 category: javascript
-tags: [Design Pattern, javascript]
+tags: [javascript, Design Pattern]
 imagefeature: ""
 mathjax:
 chart:
