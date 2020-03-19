@@ -58,7 +58,7 @@ SELECT * FROM test_table;
 밑에 실행결과의 이미지를 보면 알수있습니다<br>
 
 - 이미지<br>
-	<img src="{{ site.url }}/images/20-03-19-delimiter/delimiter1.png" width="450">
+	<img src="{{ site.url }}/images/20-03-19-delimiter/img1.png" width="450">
 
 그렇습니다. 구분자 ;는 select * from delimiter_table 쿼리문 과 select * from test_table을 구분해주는 역활을 합니다.<br>
 
@@ -86,7 +86,7 @@ SELECT * FROM test_table;
 ```
 
 - 이미지<br>
-	<img src="{{ site.url }}/images/20-03-19-delimiter/delimiter2.png" width="450">
+	<img src="{{ site.url }}/images/20-03-19-delimiter/img2.png" width="450">
 
 오류가 발생했습니다.<br>
 그 이유는 1번째 라인에서 구분자를 바꾸어 주었기 때문에 더이상<br>
@@ -104,7 +104,7 @@ SELECT * FROM test_table$$
 ```
 
 - 이미지<br>
-	<img src="{{ site.url }}/images/20-03-19-delimiter/delimiter3.png" width="450">
+	<img src="{{ site.url }}/images/20-03-19-delimiter/img3.png" width="450">
 
 예상과 같이 문제 없이 2개의 쿼리가 실행이 됩니다.
 
@@ -121,7 +121,7 @@ SELECT * FROM test_table//
 ```
 
 - 이미지<br>
-	<img src="{{ site.url }}/images/20-03-19-delimiter/delimiter4.png" width="450">
+	<img src="{{ site.url }}/images/20-03-19-delimiter/img4.png" width="450">
 
 결과는 전과 같습니다. 이상없이 // 로 구분자가 바뀌어 쿼리가 2개 실행이 됩니다.<br>
 
@@ -167,7 +167,7 @@ END;
 ```
 
 - 이미지<br>
-	<img src="{{ site.url }}/images/20-03-19-delimiter/delimiter5.png">
+	<img src="{{ site.url }}/images/20-03-19-delimiter/img5.png">
 
 1개의 성공 2개의 에러가 발생하였습니다.<br>
 보기 쉽게 구분자 별로 쿼리를 나눠보겠습니다.
@@ -206,7 +206,7 @@ DELIMITER ;
 ```
 
 - 이미지<br>
-	<img src="{{ site.url }}/images/20-03-19-delimiter/delimiter6.png">
+	<img src="{{ site.url }}/images/20-03-19-delimiter/img6.png">
 
 성공적으로 쿼리문이 실행이 되었고 프로시저가 생성 되었습니다.<br>
 그러면 과정을 순서로 나누어 봅시다<br>
