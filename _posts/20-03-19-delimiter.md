@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "구분자(Delimiter)"
+title: "MySQL - Delimiter"
 description:
 headline:
 modified: 2020-03-19
