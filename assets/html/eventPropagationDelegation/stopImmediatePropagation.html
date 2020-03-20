@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>stopImmediatePropagation</title>
+</head>
+<body>
+<style>
+    div {position: relative;display: flex;justify-content: center;align-items: center;}
+    span {position: absolute;top: 0;}
+    #top {width: 500px;height: 500px;background-color: lightcoral;}
+    #middle {width: 250px;height: 250px;background-color: lightsalmon;}
+    #low1 {width: 125px;height: 125px;background-color: lightgoldenrodyellow;}
+    #low2 {width: 125px;height: 125px;background-color: lightskyblue;}
+</style>
+<div id="top">
+    <span>top</span>
+    <div id="middle">
+        <span>middle</span>
+        <div id="low1">
+            <span>low1</span>
+        </div>
+        <div id="low2">
+            <span>low2</span>
+        </div>
+    </div>
+</div>
+<script>
+document.getElementById("top").addEventListener("click", function () {
+    console.log("top")
+})
+document.getElementById("middle").addEventListener("click", function () {
+    console.log("middle")
+})
+document.getElementById("low1").addEventListener("click", function (event) {
+    event.stopPropagation();
+    console.log("low1-event1")
+})
+document.getElementById("low1").addEventListener("click", function (event) {
+    event.stopPropagation();
+    console.log("low1-event2")
+})
+document.getElementById("low2").addEventListener("click", function (event) {
+    event.stopImmediatePropagation();
+    console.log("low2-event1")
+})
+document.getElementById("low2").addEventListener("click", function (event) {
+    event.stopImmediatePropagation();
+    console.log("low2-event2")
+})
+</script>
+</body>
+</html>

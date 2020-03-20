@@ -27,12 +27,12 @@ DELIMITER ;
 
 그래서 MySQL 의 여러가지를 정리 하기 전에 구분문자 먼저 정리를 해보겠습니다.
 
-#### 정의
+## 정의
 
 - Delimiter 자체를 한글로 번역하면 구분자, 구분문자 입니다.
 - 그리고 이 구분자는 MySQL 에서만 사용하는것이 아닌 여러가지 프로그래밍 에서 사용을 합니다.<br> ex) CSV - 쉼표, HTML 태그 - 꺽쇠, Java - 세미콜론
 
-#### 예시
+## 예시
 - MySQL 에서도 구분문자로 ;(세미콜론)을 사용하고있습니다.
 - 예시로 코드를 작성하고 확인하기 위해 delimiter_table, test_table을 2개 만들었습니다. <br> 그리고 SQLyog 에서 쿼리문을 실행해 보겠습니다.
 
@@ -46,11 +46,11 @@ SELECT * FROM test_table;
 - 밑에 실행결과의 이미지를 보면 알수있습니다
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/images/2020-03-19-mysql-delimiter/img1.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img1.png" class="col-12">
 
 - 그렇습니다. 구분자 ;는 select * from delimiter_table 쿼리문 과 select * from test_table을 구분해주는 역활을 합니다.
 
-#### MySQL 에서의 DELIMITER 명령어
+## DELIMITER 명령어
 
 - MySQL에서는 ; 으로 구분자를 사용한다는 것을 알게되었습니다.
 - 그런데 example Procedure 코드에서 봤던 DELIMITER 명령어는 뭘까요?
@@ -71,7 +71,7 @@ SELECT * FROM test_table;
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/images/2020-03-19-mysql-delimiter/img2.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img2.png" class="col-12">
 
 - 오류가 발생했습니다.<br>
 그 이유는 1번째 라인에서 구분자를 바꾸어 주었기 때문에 더이상<br>
@@ -87,7 +87,7 @@ SELECT * FROM test_table$$
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/images/2020-03-19-mysql-delimiter/img3.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img3.png" class="col-12">
 
 - 예상과 같이 문제 없이 2개의 쿼리가 실행이 됩니다.<br>
 자 그러면 제가 정의 하고 싶은 문자가 가능한지 한번더 테스트 해보겟습니다.
@@ -101,7 +101,7 @@ SELECT * FROM test_table//
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/images/2020-03-19-mysql-delimiter/img4.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img4.png" class="col-12">
 
 - 결과는 전과 같습니다. 이상없이 // 로 구분자가 바뀌어 쿼리가 2개 실행이 됩니다.<br>
 
@@ -110,7 +110,7 @@ SELECT * FROM test_table//
 2. 쿼리문은 DELIMITER delimiter_character 로 사용할수있다.<br>
 3. delimiter_character 는 정의하고 싶은 문자를 넣으면 가능하다.
 
-#### MySQL 에서의 DELIMITER 를 사용하는 이유
+## DELIMITER 를 사용하는 이유
 
 - 일반적으로 쿼리문을 실행 할때는 구분자를 변경 할 이유가없습니다
 - 괜히 구분자를 바꿔서 다른 개발자가 그 쿼리문을 봤을때 혼동이 오게되겠죠<br>
@@ -143,7 +143,7 @@ END;
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/images/2020-03-19-mysql-delimiter/img5.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img5.png" class="col-12">
 
 - 1개의 성공 2개의 에러가 발생하였습니다.
 - 보기 쉽게 구분자 별로 쿼리를 나눠보겠습니다.
@@ -178,7 +178,7 @@ DELIMITER ;
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/images/2020-03-19-mysql-delimiter/img6.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img6.png" class="col-12">
 
 - 성공적으로 쿼리문이 실행이 되었고 프로시저가 생성 되었습니다.
 - 그러면 과정을 순서로 나누어 봅시다
@@ -189,11 +189,6 @@ DELIMITER ;
 4. 다시 DELIMITER ; 로 구분자를 ; 콜론으로 정의합니다.
 5. sp_name() 프로시저를 호출하면 구분자가 다시 ; 으로 바뀌었기 때문에 문제없이 1개의 프로시저 실행으로 2개의 쿼리문을 실행할수있다.
 
-#### 정리
-
-이렇게 DELIMITER와 사용하는 이유를 알아보았습니다.<br>
-그러면 이제 다음 포스트에서 Stored Procedure, Function, Trigger 각각을 정의하며 하나씩 습득해보겠습니다.<br>
-
-#### Reference
+## Reference
 
 * [mysql tutorial](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-delimiter/)

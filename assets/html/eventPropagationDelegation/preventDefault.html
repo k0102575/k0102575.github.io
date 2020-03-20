@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>preventDefault</title>
+</head>
+<body>
+<style>
+    div {position: relative;display: flex;justify-content: center;align-items: center;}
+    span, a {position: absolute;top: 0;}
+    #top {width: 500px;height: 500px;background-color: lightcoral;}
+    #middle {width: 250px;height: 250px;background-color: lightsalmon;}
+    #low {width: 125px;height: 125px;background-color: lightgoldenrodyellow;}
+</style>
+<div id="top">
+    <span>top</span>
+    <div id="middle">
+        <a href="http://www.naver.com" id="dontSetPrevent">middle</span>
+        <div id="low">
+            <a href="http://www.naver.com" id="setPrevent">low</a>
+        </div>
+    </div>
+</div>
+<script>
+function elementEvent() {
+    console.log("a 태그 기본 이벤트 실행")
+}
+document.getElementById("dontSetPrevent").addEventListener("click", function () {
+    console.log("prevent Default 설정 하지 않은 A 태그")
+})
+document.getElementById("setPrevent").addEventListener("click", function (event) {
+    event.preventDefault()
+    console.log("prevent Default 설정 한 A 태그")
+})
+</script>
+</body>
+</html>
