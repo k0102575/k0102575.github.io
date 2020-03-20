@@ -4,3 +4,24 @@
 .col-6 {width: 50%;}
 .col-9 {width: 75%;}
 .col-12 {width: 100%;}
+
+
+.language-text {
+
+	.highlight {
+		.gutter {
+			display: none;
+		}
+
+		.code {
+			pre {
+				code {
+					font-size: 12px;
+		    		line-height: 1;
+		    		color: #000;
+				}
+			}
+		}
+	}
+
+}
