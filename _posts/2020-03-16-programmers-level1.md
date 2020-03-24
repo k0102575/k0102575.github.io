@@ -30,7 +30,7 @@ tags: [Programmers, JavaScript, Algorithm, Coding Test]
 
 ## [10. 서울에서 김서방 찾기](https://github.com/k0102575/Programmers/blob/master/level1/10_kimSeobang.js)
 
-## 11. 완주하지 못한 선수
+### [11. 완주하지 못한 선수](https://github.com/k0102575/Programmers/blob/master/level1/11_incompletePlayer.js)
 
 ## 12. K번째수
 
