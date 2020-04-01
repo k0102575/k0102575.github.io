@@ -43,9 +43,9 @@ tags: [Programmers, JavaScript, Algorithm, Coding Test]
 
 ## [16. 문자열을 정수로 바꾸기](https://github.com/k0102575/Programmers/blob/master/level1/11_incompletePlayer.js)
 
-## 17. 약수의 합
+## [17. 약수의 합](https://github.com/k0102575/Programmers/blob/master/level1/17_sumDivisor.js)
 
-## 18. 모의고사
+## [18. 모의고사](https://github.com/k0102575/Programmers/blob/master/level1/18_mockTest.js)
 
 ## 19. 핸드폰 번호 가리기
 
