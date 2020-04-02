@@ -47,9 +47,9 @@ tags: [Programmers, JavaScript, Algorithm, Coding Test]
 
 ## [18. 모의고사](https://github.com/k0102575/Programmers/blob/master/level1/18_mockTest.js)
 
-## 19. 핸드폰 번호 가리기
+## [19. 핸드폰 번호 가리기](https://github.com/k0102575/Programmers/blob/master/level1/19_hidePhoneNumber.js)
 
-## 20. 하샤드 수
+## [20. 하샤드 수](https://github.com/k0102575/Programmers/blob/master/level1/20_Harshad.js)
 
 ## 21. 콜라츠 추측
 
