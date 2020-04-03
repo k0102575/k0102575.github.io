@@ -51,9 +51,9 @@ tags: [Programmers, JavaScript, Algorithm, Coding Test]
 
 ## [20. 하샤드 수](https://github.com/k0102575/Programmers/blob/master/level1/20_Harshad.js)
 
-## 21. 콜라츠 추측
+## [21. 콜라츠 추측](https://github.com/k0102575/Programmers/blob/master/level1/21_colatzConject.js)
 
-## 22. 자릿수 더하기
+## [22. 자릿수 더하기](https://github.com/k0102575/Programmers/blob/master/level1/22_sumDigits.js)
 
 ## 23. 행렬의 덧셈
 
