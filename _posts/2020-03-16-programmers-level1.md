@@ -55,9 +55,9 @@ tags: [Programmers, JavaScript, Algorithm, Coding Test]
 
 ## [22. 자릿수 더하기](https://github.com/k0102575/Programmers/blob/master/level1/22_sumDigits.js)
 
-## 23. 행렬의 덧셈
+## [23. 행렬의 덧셈](https://github.com/k0102575/Programmers/blob/master/level1/23_sumMatrix.js)
 
-## 24. 최대공약수와 최소공배수
+## [24. 최대공약수와 최소공배수](https://github.com/k0102575/Programmers/blob/master/level1/24_maximumCommonWaterMinimumCommonMultiple.js)
 
 ## 25. 정수 제곱근 판별
 
