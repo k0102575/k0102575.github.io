@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 모듈 패턴(Module Pattern)
 description: ""
 date: 2019-09-30

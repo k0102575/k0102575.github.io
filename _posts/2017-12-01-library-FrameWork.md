@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 라이브러리와 프레임워크
 description: ""
 date: 2017-12-01

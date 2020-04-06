@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 서버리스 컴퓨팅 & 마이크로 서비스
 description: ""
 date: 2017-12-21

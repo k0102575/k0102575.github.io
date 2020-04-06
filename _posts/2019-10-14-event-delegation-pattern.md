@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 이벤트 델리게이션 패턴(event Delegation Pattern)
 description: ""
 date: 2019-10-14

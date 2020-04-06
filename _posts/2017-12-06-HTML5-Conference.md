@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 2017 HTML5 컨퍼런스
 description: "2017 HTML5 컨퍼런스 갔다와서 남기는 리뷰"
 date: 2017-12-06

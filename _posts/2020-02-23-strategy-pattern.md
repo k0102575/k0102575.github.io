@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 전략 패턴(Strategy Pattern)
 description: ""
 date: 2020-02-23

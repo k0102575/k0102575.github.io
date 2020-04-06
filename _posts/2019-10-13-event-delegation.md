@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 이벤트 전달과 DOM 이벤트 처리
 description: ""
 date: 2019-09-30

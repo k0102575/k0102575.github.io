@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 이벤트 전파 중단
 description: ""
 date: 2019-09-30

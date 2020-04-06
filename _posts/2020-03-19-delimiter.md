@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "[MySQL] Delimiter"
 description: ""
 date: 2020-03-19

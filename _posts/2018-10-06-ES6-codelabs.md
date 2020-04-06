@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 자바스크립트 ES6 ~ ES8 Codelabs
 description: ""
 date: 2018-10-06

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Flutter Codelabs
 description: ""
 date: 2019-06-29

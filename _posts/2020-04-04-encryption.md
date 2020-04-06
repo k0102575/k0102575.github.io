@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "[Security] 암호화 알고리즘 - 양방향 암호화, Encryption"
 description: ""
 date: 2020-03-25

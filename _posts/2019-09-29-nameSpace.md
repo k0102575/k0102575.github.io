@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 네임 스페이스 패턴(Name Space)
 description: ""
 date: 2019-09-29

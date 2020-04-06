@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 템플릿 메서드 패턴(Template Method Pattern)
 description: ""
 date: 2020-03-02
@@ -73,7 +74,7 @@ public Class StrawBerryWaffle {
 
 ## 템플릿 메서드 패턴을 사용해 보자
 
-- 1) 공통적인 부분을 모아 추상클래스를 만들자
+- 1. 공통적인 부분을 모아 추상클래스를 만들자
 
 > Code
 
@@ -84,7 +85,7 @@ public abstract Waffle {
 }
 ```
 
-- 2) 알고리즘의 세부 항목에서 차이가 있는 곳은 추상 메소드로 정의한다.
+- 2. 알고리즘의 세부 항목에서 차이가 있는 곳은 추상 메소드로 정의한다.
 
 > Code
 
@@ -95,7 +96,7 @@ public abstract Waffle {
 }
 ```
 
-- 3) 하위 클래스에서 오버라이딩 되지 않아야 할 메서드는 final을 선언한다.
+- 3. 하위 클래스에서 오버라이딩 되지 않아야 할 메서드는 final을 선언한다.
 
 > Code
 
@@ -109,7 +110,7 @@ public abstract Waffle {
 }
 ```
 
-- 4) 서브클래스 구현시 융통성을 발휘하기 위해 Hook 메서드를 구현한다.
+- 4. 서브클래스 구현시 융통성을 발휘하기 위해 Hook 메서드를 구현한다.
 
 > Code
 
@@ -128,7 +129,7 @@ public abstract Waffle {
 
 <img src="{{ site.url }}/assets/image/2020-03-02-template-method-pattern/diagram3.png" class="col-12">
 
-## **후크 메서드**
+## 후크 메서드
 - abstract 키워드를 붙이면 상속 받은 클래스는 반드시 해당 메소드를 구현해야 하지만 <br>
 abstract 키워드를 붙이지 않고 훅 메소드로 만들면 반드시 구현할 필요가 없습니다. <br>
 상속 받은 클래스에서는 선택적으로 오버라이드할 수 있다는 얘기가 됩니다.

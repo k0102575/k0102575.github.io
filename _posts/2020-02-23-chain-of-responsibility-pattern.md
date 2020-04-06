@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 책임 연쇄 패턴(chain-of-responsibility pattern)
 description: ""
 date: 2020-02-23

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 프록시 패턴(Proxy Pattern)
 description: ""
 date: 2019-11-16
