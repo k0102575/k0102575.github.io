@@ -8,8 +8,9 @@ tags: [Security, Encryption]
 ---
 
 
-# 단방향 암호화를 보기전 봐야될 포스트
+# 암호화 관련 포스트
 - [암호화]({{ site.url }}/articles/2020-03/security)
+- [양방향 암호화]({{ site.url }}/articles/2020-04/encryption)
 
 
 # 양방향 암호화 (Two-Way Encryption)
@@ -49,7 +50,6 @@ tags: [Security, Encryption]
 - 한글명으로는 고급 암호화 표준이며 미국정부가 채택한 이유 전세계 에서 널리 사용하고 있는 알고리즘 이다.
 
 
-
 ## 비대칭키 암호화 방식(공개 키)
 <img src="{{ site.url }}/assets/image/2020-04-04-encryption/image2.png">
 
@@ -71,18 +71,6 @@ tags: [Security, Encryption]
 
 # Reference
 
-* [단방향 암호화 이미지 출처](https://godd.tistory.com/46)
-
-* [해시함수 개념 정리 블로그](https://velog.io/@zuyonze/%ED%95%B4%EC%8B%9C%ED%95%A8%EC%88%98%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0)
-
-* [https://gbsb.tistory.com/110](https://gbsb.tistory.com/110)
-
-* [해시함수 위키](https://ko.wikipedia.org/wiki/%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98)
-
-* [암호화 해시함수 위키](https://ko.wikipedia.org/wiki/%EC%95%94%ED%98%B8%ED%99%94_%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98)
-
-* [MD5 위키](https://ko.wikipedia.org/wiki/MD5)
- 
-* [SHA 위키](https://ko.wikipedia.org/wiki/SHA)
-
-* [테스트용 sha.js 라이브러리](https://www.npmjs.com/package/sha.js)
+* [https://javaplant.tistory.com/26](https://javaplant.tistory.com/26)
+* 
+* [나무위키](https://namu.wiki/w/%EC%95%94%ED%98%B8%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
