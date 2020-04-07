@@ -11,7 +11,7 @@ tags: [Security, Encryption]
 
 # 암호화 관련 포스트
 - [암호화]({{ site.url }}/articles/2020-03/security)
-- [양방향 암호화]({{ site.url }}/articles/2020-04/encryption)
+- [단방향 암호화]({{ site.url }}/articles/2020-03/hash)
 
 
 # 양방향 암호화 (Two-Way Encryption)
@@ -73,5 +73,5 @@ tags: [Security, Encryption]
 # Reference
 
 * [https://javaplant.tistory.com/26](https://javaplant.tistory.com/26)
-* 
+
 * [나무위키](https://namu.wiki/w/%EC%95%94%ED%98%B8%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
