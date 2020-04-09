@@ -4,8 +4,8 @@ title: 모듈 패턴(Module Pattern)
 description: ""
 date: 2019-09-30
 categories:
- - JavaScript
-tags: [JavaScript, Module Pattern, Design Pattern]
+ - Design Pattern
+tags: [JavaScript, Module Pattern]
 ---
 
 ## 모듈 패턴 (Module Pattern)
@@ -75,12 +75,12 @@ var myFunction = function () {
 > Code
 
 ```javascript
-var testModule = { 
-    key : 'value', 
-    pulicMethod : function () { 
+var testModule = {
+    key : 'value',
+    pulicMethod : function () {
         console.log("Hello Module")
         ...
-    } 
+    }
 }
 ```
 
@@ -121,10 +121,10 @@ var sampleModule = (function () {
         }
     }
 })();
- 
+
 sampleModule.setVar(5);
 sampleModule.getVar();
- 
+
 console.log("sampleModule => ", sampleModule);
 console.log("sampleModule.privateVar => ", sampleModule.privateVar);
 console.log("sampleModule.setVar() => ", sampleModule.setVar);
@@ -145,31 +145,31 @@ var sampleModule = (function () {
 
   // 비공개 멤버
   var privateVar = 0;
- 
+
   function changeVar(value) {
     console.log("changeVar " + privateVar + " => " + value);
     privateVar = value;
   }
- 
+
   var setPrivateFunc = function (value) {
     changeVar(value);
   };
- 
+
   var getPrivateFunc = function () {
     console.log("getVar return " + privateVar);
     return privateVar;
   };
- 
+
   // 특권멤버
   return {
     setVar: setPrivateFunc,
     getVar: getPrivateFunc
   }
 })();
- 
+
 sampleModule.setVar(5);
 sampleModule.getVar();
- 
+
 console.log("sampleModule => ", sampleModule);
 console.log("sampleModule.privateVar => ", sampleModule.privateVar);
 console.log(sampleModule.setVar);
@@ -186,38 +186,38 @@ console.log(sampleModule.setVar);
 ```javascript
 // 범용 네임 스페이스
 var sampleAPP = sampleAPP || {};
- 
+
 sampleAPP.sampleModule = (function () {
-  
+
   // 의존 관계 패턴
   var dom = window.document
 
   console.log("sample Module")
   var privateVar = 0;
- 
+
   function changeVar(value) {
     console.log("changeVar " + privateVar + " => " + value);
     privateVar = value;
   }
- 
+
   var setPrivateFunc = function (value) {
     changeVar(value);
   };
- 
+
   var getPrivateFunc = function () {
     console.log("getVar return " + privateVar);
     return privateVar;
   };
- 
+
   return {
     setVar: setPrivateFunc,
     getVar: getPrivateFunc
   }
 })();
- 
+
 sampleAPP.sampleModule.setVar(5);
 sampleAPP.sampleModule.getVar();
- 
+
 console.log("sampleAPP.sampleModule => ", sampleAPP.sampleModule);
 console.log("sampleAPP.sampleModule.privateVar => ", sampleAPP.sampleModule.privateVar);
 console.log("sampleAPP.sampleModule.setVar => ", sampleAPP.sampleModule.setVar);
