@@ -100,10 +100,37 @@ All extensions and complete User Folder that Contains
 <img src="{{ site.url }}/assets/image/2020-04-09-settings-sync/image6.png">
 
 
-### 5. 설정 다운로드 (Todo)
+### 5. 설정 동기화 설정
 
 > 설정 동기화 할곳에서 Settings Sync 설치하기
+> Command Palette > sync 검색 > Sync:고급옵션 > Sync:설정열기 > 저장했던 Gist ID & 엑세스 토큰 입력
+
+<img src="{{ site.url }}/assets/image/2020-04-09-settings-sync/image7.png">
 
 
-> OS 에 맞게 Down Key 타이핑 하거나
+### 6. 설정 다운로드
+
+> OS 에 맞게 Upload Key 타이핑 하거나
 > Command Palette 에서 Sync 검색후 다운로드 설정
+
+<img src="{{ site.url }}/assets/image/2020-04-09-settings-sync/image8.png">
+
+
+# 알아 두면 좋을것 같은 기능들
+
+- 설정 및 키바인딩을 동기화 하지 않기 위해 sync-ignore를 설정할수있다.<br>
+  장비에 host명을 입력하여 host마다 혹은 OS 마다 설정을 동기화 하거나 안할수있다. <br>
+  [Sync Pragmas](https://github.com/shanalikhan/code-settings-sync/wiki/Sync-Pragmas)
+- extensions ingnore 를 설정하여 동기화 하지 않을 익스텐션을 설정할수있었다.
+- 세팅 변경시에 자동 업로드 vscode 실행시에 자동 다운로드 등을 설정하여 동기화 설정만 하면 크게 신경 쓰지 않아도 될것같았다.
+
+
+# 마무리
+- 한국어 설정 등 vscode를 재부팅 해야되는것들은 한번에 다운로드 및 설정이 되지 않는 경우도 있었다. 하지만
+- gist에 업로드된 파일을 보면 내가 작성한 keybindings 및 settings, extensions.json 파일이 그대로 올라가잇었다. 주석 까지도
+- 되게 생각해 보면 간단하고 기본적인 플러그인인데 왜 이제서야 설정했는지 모르겠다.
+
+
+# Reference
+
+* [market Place Url](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
