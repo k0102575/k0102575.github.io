@@ -12,6 +12,7 @@ tags: [Programmers, JavaScript, Algorithm, Coding Test]
 - 링크 설정 되어있지 않은것들은 아직 풀지 않은겁니다.
 # 프로그래머스 코딩 테스트 level1
 
+
 ## [1. 2016년](https://github.com/k0102575/Programmers/blob/master/level1/1_year2016.js)
 
 ## [2. 가운데 글자 가져오기](https://github.com/k0102575/Programmers/blob/master/level1/2_getMiddleLetter.js)
@@ -76,14 +77,16 @@ tags: [Programmers, JavaScript, Algorithm, Coding Test]
 
 ## [32. 자연수 뒤집어 배열로 만들기](https://github.com/k0102575/Programmers/blob/master/level1/32_naturalNumberToArray.js)
 
-## 33. 이상한 문자 만들기
+## [33. 이상한 문자 만들기](https://github.com/k0102575/Programmers/blob/master/level1/33_makeStrangeLetter.js)
 
-## 34. 정수 내림차순으로 배치하기
+## [34. 정수 내림차순으로 배치하기](https://github.com/k0102575/Programmers/blob/master/level1/34_integerDescendingOrder.js)
 
-## 35. 예산
+## [35. 예산](https://github.com/k0102575/Programmers/blob/master/level1/35_budget.js)
 
 ## 36. 실패율
 
 ## 37. 비밀지도
 
 ## 38. 다트 게임
+
+출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
