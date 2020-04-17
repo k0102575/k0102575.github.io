@@ -9,7 +9,7 @@ tags: [MySQL, DB, Delimiter]
 ---
 
 
-## Delimiter (구분자) 
+## Delimiter (구분자)
 
 - MySQL 에서 Stored Procedure, Function, Trigger를 작성 하다 보면 항상 따라 붙는 명령어가 있습니다.<br> 바로 DELIMITER $$ 명령어 입니다.
 
@@ -17,12 +17,12 @@ tags: [MySQL, DB, Delimiter]
 // example Procedure 코드
 
 DELIMITER $$
- 
+
 CREATE PROCEDURE sp_name()
 BEGIN
   -- statements
 END $$
- 
+
 DELIMITER ;
 ```
 
@@ -47,7 +47,7 @@ SELECT * FROM test_table;
 - 밑에 실행결과의 이미지를 보면 알수있습니다
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img1.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-delimiter/img1.png" class="col-12">
 
 - 그렇습니다. 구분자 ;는 select * from delimiter_table 쿼리문 과 select * from test_table을 구분해주는 역활을 합니다.
 
@@ -72,7 +72,7 @@ SELECT * FROM test_table;
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img2.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-delimiter/img2.png" class="col-12">
 
 - 오류가 발생했습니다.<br>
 그 이유는 1번째 라인에서 구분자를 바꾸어 주었기 때문에 더이상<br>
@@ -88,7 +88,7 @@ SELECT * FROM test_table$$
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img3.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-delimiter/img3.png" class="col-12">
 
 - 예상과 같이 문제 없이 2개의 쿼리가 실행이 됩니다.<br>
 자 그러면 제가 정의 하고 싶은 문자가 가능한지 한번더 테스트 해보겟습니다.
@@ -102,7 +102,7 @@ SELECT * FROM test_table//
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img4.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-delimiter/img4.png" class="col-12">
 
 - 결과는 전과 같습니다. 이상없이 // 로 구분자가 바뀌어 쿼리가 2개 실행이 됩니다.<br>
 
@@ -120,13 +120,13 @@ SELECT * FROM test_table//
 
 ```ruby
 DELIMITER $$
- 
+
 CREATE PROCEDURE sp_name()
 BEGIN
 	SELECT * FROM delimiter_table;
 	SELECT * FROM test_table;
 END $$
- 
+
 DELIMITER ;
 ```
 
@@ -144,7 +144,7 @@ END;
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img5.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-delimiter/img5.png" class="col-12">
 
 - 1개의 성공 2개의 에러가 발생하였습니다.
 - 보기 쉽게 구분자 별로 쿼리를 나눠보겠습니다.
@@ -168,18 +168,18 @@ END;
 
 ```ruby
 DELIMITER $$
- 
+
 CREATE PROCEDURE sp_name()
 BEGIN
 	SELECT * FROM delimiter_table;
 	SELECT * FROM test_table;
 END $$
- 
+
 DELIMITER ;
 ```
 
 > **결과 이미지**
-<img src="{{ site.url }}/assets/image/2020-03-19-mysql-delimiter/img6.png" class="col-12">
+<img src="{{ site.url }}/assets/image/2020-03-19-delimiter/img6.png" class="col-12">
 
 - 성공적으로 쿼리문이 실행이 되었고 프로시저가 생성 되었습니다.
 - 그러면 과정을 순서로 나누어 봅시다
