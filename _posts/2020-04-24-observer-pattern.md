@@ -79,6 +79,6 @@ tags: [Design Pattern, Observer Pattern]
 
 ## Reference
 
-- [템플릿 메소드 패턴 위키](https://ko.wikipedia.org/wiki/%ED%85%9C%ED%94%8C%EB%A6%BF_%EB%A9%94%EC%86%8C%EB%93%9C_%ED%8C%A8%ED%84%B4)
-- [https://mjdeeplearning.tistory.com/11](https://mjdeeplearning.tistory.com/11)
-- [observer 패턴 이미지](https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c)
+- [옵저버 패턴 위키](https://ko.wikipedia.org/wiki/%EC%98%B5%EC%84%9C%EB%B2%84_%ED%8C%A8%ED%84%B4)
+- [헤드 퍼스트 디자인 패턴 도서](https://www.google.com/search?q=%ED%97%A4%EB%93%9C+%ED%8D%BC%EC%8A%A4%ED%8A%B8+%EB%94%94%EC%9E%90%EC%9D%B8+%ED%8C%A8%ED%84%B4&oq=%ED%97%A4%EB%93%9C+%ED%8D%BC%EC%8A%A4%ED%8A%B8+%EB%94%94%EC%9E%90%EC%9D%B8+%ED%8C%A8%ED%84%B4&aqs=chrome..69i57j0l5j69i60l2.3516j0j7&sourceid=chrome&ie=UTF-8)
+- [옵저버 패턴 이미지](https://hackernoon.com/observer-vs-pub-sub-pattern-50d3b27f838c)
