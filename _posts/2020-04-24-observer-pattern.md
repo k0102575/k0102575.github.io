@@ -14,20 +14,19 @@ tags: [Design Pattern, Observer Pattern]
 ## 정의
 - 뭔가 중요한 일(객체의 상태 변화)이 발생했을 때 객체들한테 새소식을 알려주는 패턴
 
-> image
-
-<img src="{{ site.url }}/assets/image/2020-04-24-observer-pattern/image1.png" class="col-12">
-
 > Diagram Image
 
 <img src="{{ site.url }}/assets/image/2020-04-24-observer-pattern/image2.png" class="col-12">
+
+> image
+
+<img src="{{ site.url }}/assets/image/2020-04-24-observer-pattern/image1.png" class="col-12">
 
 
 ## 간단한 예
 
 ```text
-내가 쇼핑몰에 할인 이벤트 메일을 구독 신청을 하게 되면
-할인 이벤트 가 시작할때 마다 메일을 받을수있다.
+내가 쇼핑몰에 할인 이벤트 메일을 구독 신청을 하게 되면 할인 이벤트 가 시작할때 마다 메일을 받을수있다.
 내가 할인 이벤트에 관한 구독 해지 신청을 하기 전까지는 계속해서 메일을 받을수있다.
 내가 구독 해지 신청을 하면 할인 이벤트가 시작을 해도 메일을 받지 못한다.
 
@@ -72,9 +71,116 @@ tags: [Design Pattern, Observer Pattern]
 
 ## 옵저버 패턴을 구현해 보자
 
+```java
+
+public interface Subject {
+    void registerObserver(Observer observer);
+    void unRegisterObserver(Observer observer);
+    void notifyObservers();
+} 
+
+public interface Observer {
+    void update(String eventDate, String eventName);
+}
+
+public class ShoppingMall implements Subject{
+    private List<Observer> observers;
+    private String eventDate;
+    private String eventName;
+
+    {
+        this.observers = new ArrayList<>();
+    }
+
+    public void eventChanged(){ this.notifyObservers(); }
+    public void setEventChanged(String date, String name){	//값이 세팅된다고 가정.
+        this.eventDate = date;
+        this.eventName = name;
+        this.eventChanged();
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update(this.eventDate, this.eventName);
+        }
+    }
+
+    @Override
+    public void registerObserver(Observer observer) {
+        this.observers.add(observer);
+    }
+
+    @Override
+    public void unRegisterObserver(Observer observer) {
+        if(observers.contains(observer)) observers.remove(observer);
+    }
+}
 
 
+public class ClientA implements Observer{
+    private String eventDate;
+    private String eventName;
 
+    public ClientA(Subject shoppingMall) {
+        this.shoppingMall = shoppingMall;
+        this.shoppingMall.registerobserver(this);	//옵저버 등록
+    }
+
+    @Override
+    public void update(String date, String name) {
+        this.eventDate = date;
+        this.eventName = name;
+        this.action();
+    }
+
+    @Override
+    public void action() {
+        System.out.println("A 고객은 이벤트를 보고 물건을 샀다");
+    }
+}
+
+public class ClientB implements Observer{
+    private String eventDate;
+    private String eventName;
+
+    public ClientB(Subject shoppingMall) {
+        this.shoppingMall = shoppingMall;
+        this.shoppingMall.registerobserver(this);	//옵저버 등록
+    }
+
+    @Override
+    public void update(String date, String name) {
+        this.eventDate = date;
+        this.eventName = name;
+        this.action();
+    }
+
+    @Override
+    public void action() {
+        System.out.println("B 고객은 이벤트를 보고 친구에게 추천했다");
+    }
+}
+
+public class ObserverPattern {
+	public static void main(String[] args) {
+		ShoppingMall shoppingMall = new ShoppingMall();
+		ClientA clientA = new ClientA(shoppingMall);
+		ClientB clientB = new ClientB(shoppingMall);
+
+        // 이벤트가 생성되었다고 가정하고 데이터 Set
+		shoppingMall.setEventChanged("2020-04-25", "테스트 할인 이벤트");
+	}
+}
+```
+
+
+## Notify를 누가 호출해야할까?
+
+- Notify() 호출을 누가 시켜야 할지 헷갈릴 수 있다.
+- GoF는 다음 두 가지 방법 중에서 선택하라고 한다.
+    * Subject 에서 변경이 발생할 때, 변경을 저장하는 메소드가 Notify()를 호출하는 방법.
+    * 사용자(main 등)가 적절한 시기에 Notify()를 호출하는 방법.
 
 
 ## Reference
