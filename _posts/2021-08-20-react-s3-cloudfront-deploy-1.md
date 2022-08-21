@@ -5,10 +5,10 @@ description: ""
 date: 2021-08-20
 categories:
   - CD
-tags: [React, AWS S3, AWS CloudFront, CD]
+tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 ---
 
-# React 프로젝트 AWS S3, CloudFront에 배포하기 - 1
+# React 프로젝트 AWS S3, CloudFront에 배포 및 가비아 구매 도메인 연결하기 - 1
 
 ```text
 회사 퇴직을 하기 전 배포중인 프로젝트의 인수인계를 위하여 문서작업을 진행하게되었습니다.
@@ -133,9 +133,9 @@ tags: [React, AWS S3, AWS CloudFront, CD]
 #### 8. 다음 스탭
 
 - 웹사이트 엔드포인트가 너무나 길며 원하는 url 이 아닙니다.
-- 회사에서는 가비아 지만 구입한 도메민으로 url 접속시 버킷에 접속할수 있게 진행해 보겠습니다.
+- 회사에서는 가비아로 도메인을 구입하였기 때문에 가비아를 거쳐 url 접속시 버킷에 접속할수 있게 진행해 보겠습니다.
 - 가비아를 통한 설정, 가비아 dns 를 route53에 등록하여 route53을 통한 설정 2가지 스탭으로 포스트를 나눠 2가지 방식을 작성하겠습니다.
 
 
-## [가비아를 통한 도메인 연결]({{ site.url }}/articles/2020-03/security)
+## [가비아를 통한 도메인 연결]({{ site.url }}/articles/2021-08/react-s3-cloudfront-deploy-2-gabia)
 ## [route53을 통한 도메인 연결]({{ site.url }}/articles/2020-03/security)
