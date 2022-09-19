@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React 프로젝트 AWS S3, CloudFront에 배포하기 - 2 (가비아)
+title: React 프로젝트 AWS S3, CloudFront에 배포 및 가비아 구매 도메인 연결하기 - 2 (가비아)
 description: ""
 date: 2021-08-20
 categories:
@@ -18,6 +18,8 @@ tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 도메인은 가비아에서 구매를 하셨기 때문에 가비아를 통한 연동과 route53을 통한 연동 2가지로 구성되어있습니다.
 포스트를 1 부터 차근차근 나눴기에 연결되게 보시는것을 추천합니다.
 모든 정보는 2021년 8월을 기준으로 하며 aws 및 가비아 측 업데이트로 인하여 바뀐부분은 정확하지 않을수 있습니다.
+글로벌한 서비스 말고는 전부 서울 리전을 선택하여 진행하였습니다. 
+원하시는 리전 포인트를 설정 하시면 모든 서비스 같이 맞춰주셔야됩니다.
 ```
 
 

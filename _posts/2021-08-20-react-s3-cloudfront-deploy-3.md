@@ -8,7 +8,7 @@ categories:
 tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 ---
 
-# React 프로젝트 AWS S3, CloudFront에 배포 및 가비아 구매 도메인 연결하기 - 1
+# React 프로젝트 AWS S3, CloudFront에 배포 및 가비아 구매 도메인 연결하기 - 3
 
 ```text
 회사 퇴직을 하기 전 배포중인 프로젝트의 인수인계를 위하여 문서작업을 진행하게되었습니다.
@@ -23,9 +23,10 @@ tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 ```
 
 
-### goal - S3 에 react 프로젝트 정적 웹 호스팅 하기
+### goal - Cloudfront로 https 배포 환경을 위하여 ACM (AWS Certificate Manager) 을 통하여 SSL/TLS X.509를 생성해봅시다.
 
-- 우선 react 프로젝트를 CloudFront 를 통하여 배포를 하기전 첫번째 단계인 S3 에 react 프로젝트 정적 웹호스팅을 진행해보도록 하겠습니다.
+- AWS CloudFront 는 https 배포가 필수적입니다.
+- 그 과정을 위해 CloudFront 
 
 
 #### 1. AWS console에 로그인하여 S3 서비스에 접속
