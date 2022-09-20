@@ -83,4 +83,4 @@ tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 - 하지만 https 설정도 되지 않은 프로젝트 이며 AWS 에서 Cloudfront 를 통하여 글로벌하게 또한, 정적 호스팅에 도움이 될수 있도록 설정해봅시다.
 - 다음 스텝은 cloudfront 설정 하기전에 필요한 과정인 https 를 위한 ACM 인증서를 생성해 보겠습니다.
 
-## [ACM 생성]({{ site.url }}/articles/2021-08/react-s3-cloudfront-deploy-2-gabia)
+## [ACM 생성]({{ site.url }}/articles/2021-08/react-s3-cloudfront-deploy-3)
