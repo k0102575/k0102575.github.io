@@ -31,6 +31,7 @@ tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 ## goal - S3 에 react 프로젝트 정적 웹 호스팅 하기
 
 - 우선 react 프로젝트를 CloudFront 를 통하여 배포를 하기전 첫번째 단계인 S3 에 react 프로젝트 정적 웹호스팅을 진행해보도록 하겠습니다.
+- S3 버킷은 서울리전을 선택하였습니다.
 <br>
 
 ### 1. AWS console에 로그인하여 S3 서비스에 접속
