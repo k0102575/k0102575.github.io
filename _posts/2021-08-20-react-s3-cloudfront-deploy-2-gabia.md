@@ -63,6 +63,7 @@ tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 - 레코드 추가하기를 클릭해 원하는 url 로 설정하여 프로젝트에 접속할수있게 해보겠습니다.
 - 레코드 타입은 CNAME 으로 설정합니다.
 - 도메인은 버킷에서 잡았던 서브도메인으로 작성하고 버킷 웹사이트 엔드포인트를 작성한뒤 확인 및 저장을 진행해줍니다.
+- 꼭 엔드포인트 뒤에 "." 을 찍어주셔야됩니다! (가비아 레코드 저장 필수사항)
 
 <img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-2-gabia/image5.png" class="col-12" />
 
@@ -80,6 +81,9 @@ tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 
 <img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-2-gabia/image7.png" class="col-12" />
 
+### 가비아 고객센터
+
+- [해당 포스트 과정 Document](https://customer.gabia.com/manual/dns/3041/3040)
 
 ## 다음 스탭
 

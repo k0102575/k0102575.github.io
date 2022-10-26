@@ -121,16 +121,14 @@ tags: [React, AWS S3, AWS CloudFront, CD, Gabia, AWS Route53, AWS ACM]
 
 ```json
 {
-  {
-    "Sid": "2",
-    "Effect": "Allow",
-    "Principal": {
+  "Sid": "1",
+  "Effect": "Allow",
+  "Principal": {
       "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity 클라우드프론트ID"
-    },
-    "Action": "s3:GetObject",
-    "Resource": "arn:aws:s3:::도메인이름/*"
-  }
-}
+  },
+  "Action": "s3:GetObject",
+  "Resource": "arn:aws:s3:::도메인이름/*"
+},
 ```
 
 <img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-4/image12.png" class="col-12" />
