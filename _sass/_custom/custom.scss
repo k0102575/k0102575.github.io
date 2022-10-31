@@ -1,37 +1,53 @@
 // Custom styles.
 
-.col-3 {width: 25%;}
-.col-6 {width: 50%;}
-.col-9 {width: 75%;}
-.col-12 {width: 100%;}
+.col-3 {
+  width: 25%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-12 {
+  width: 100%;
+}
 
+@for $i from 1 through 10 {
+  .fw-#{$i * 100} {
+    font-weight: #{$i * 100};
+  }
+}
+
+@for $i from 1 through 20 {
+  .gap-#{$i * 5} {
+    height: #{$i * 5}px;
+    min-height: #{$i * 5}px;
+  }
+}
 
 .language-text {
+  .highlight {
+    .gutter {
+      display: none;
+    }
 
-	.highlight {
-		.gutter {
-			display: none;
-		}
-
-		.code {
-			pre {
-				code {
-					font-size: 12px;
-		    		line-height: 1;
-		    		color: #000;
-				}
-			}
-		}
-	}
-
+    .code {
+      pre {
+        code {
+          font-size: 13px;
+          line-height: 19px;
+          color: #000;
+        }
+      }
+    }
+  }
 }
 
 .not-found-section {
-
-	a {
-		span {
-			font-size: 40px;
-		}
-	}
-
+  a {
+    span {
+      font-size: 40px;
+    }
+  }
 }
