@@ -1,6 +1,6 @@
 ---
 layout: post
-title: S3, CloudFront에 React 앱 배포 및 가비아 구매 도메인 연결하기(5):Route53
+title: S3, CloudFront에 React 앱 배포 및 가비아 구매 도메인 연결하기(5):Gabia
 description: ""
 date: 2021-08-20
 categories:
@@ -8,7 +8,7 @@ categories:
 tags: [React, AWS S3, AWS CloudFront, AWS Route53, AWS ACM, SPA Deploy, Gabia]
 ---
 
-# S3, CloudFront에 React 앱 배포 및 가비아 구매 도메인 연결하기(5):Route53
+# S3, CloudFront에 React 앱 배포 및 가비아 구매 도메인 연결하기(5):Gabia
 <div class="gap-15"></div>
 > 회사 퇴직을 하기 전 배포중인 프로젝트의 인수인계를 위하여 문서작업을 진행하게되었습니다. 그래서 블로그 포스팅도 남겨봅니다.
 
@@ -26,37 +26,36 @@ tags: [React, AWS S3, AWS CloudFront, AWS Route53, AWS ACM, SPA Deploy, Gabia]
 ```
 <div class="gap-15"></div>
 
-# goal - S3 버킷에 올린 React 프로젝트를 Route53 연결을 통하여 Cloudfront 를 통해 https 접속하기
+# goal - S3 버킷에 올린 React 프로젝트를 가비아 DNS 연결을 통하여 Cloudfront 를 통해 https 접속하기
 
 - 긴 여정의 마지막 단계 입니다.
-- 전 스텝에서 진행된 Route53 을 통해 S3 프로젝트로 연결 되고있습니다.
+- 전 스텝에서 진행된 가비아 서브 도메인은 S3 로 연결 되고있습니다.
 - 해당 서브도메인을 S3 가 아닌 Cloudfront 로 연결하여 원하는 도메인 으로 https 접속을 진행해보겠습니다.
 <br>
 
-### AWS Route53 접속
+### 가비아 DNS 관리툴 접속
 
 ```
-기존 S3 도메인 연결 과정과 똑같습니다. AWS Console 을 로그인하여 Route53 서비스에 접속합니다.
-설정하였던 호스팅영역으로 접속합니다.
+기존 S3 도메인 연결 과정과 똑같습니다.
+도메인을 구매한 계정으로 로그인하여 연결 하려는 도메인의 DNS 관리툴로 접속합시다.
 ```
 
-<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-route53/image1.png" class="col-12" />
+<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-gabia/image1.png" class="col-12" />
+<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-gabia/image2.png" class="col-12" />
+<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-gabia/image3.png" class="col-12" />
 <br>
-
 
 ### 기존 도메인 S3 연결을 Cloudfront 연결로 수정하기
 
 ```
-기존 S3 버킷으로 연결 되었던 레코드 설정을 찾습니다.
-레코드 편집을 클릭하여 편집단계를 접속합니다.
-기존 트래픽 라우팅 대상을 "CloudFront 배포에 대한 별칭"으로 설정하면 밑에 자동으로 Selectbox Option이 변경됩니다.
-Cloudfront 주소로 설정뒤 저장을 하여 마무리 합니다.
+기존 S3 버킷으로 연결 되었던 CNAME 설정을 찾습니다.
+수정 버튼을 눌러 기존에 작성 되었던 S3 버킷 웹 호스팅 URL을 Cloudfront ID 로 변경합니다.
+꼭 ID 값 뒤에 "."을 찍어주셔야됩니다! (가비아 레코드 저장 필수사항)
 ```
 
-<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-route53/image2.png" class="col-12" />
-<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-route53/image3.png" class="col-12" />
+<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-gabia/image4.png" class="col-12" />
+<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-gabia/image6.png" class="col-12" />
 <br>
-
 
 ### 설정한 URL로 접속하기
 
@@ -65,9 +64,8 @@ Cloudfront 주소로 설정뒤 저장을 하여 마무리 합니다.
 Cloudfront 에 설정한 대로 http 로 접속하여 https 로 리다이렉트 되는지도 확인합니다.
 ```
 
-<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-route53/image4.png" class="col-12" />
+<img src="{{ site.url }}/assets/image/2021-08-20-react-s3-cloudfront-deploy-5-gabia/image7.png" class="col-12" />
 <br>
-
 
 ### Finish
 

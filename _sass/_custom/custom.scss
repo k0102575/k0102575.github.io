@@ -13,35 +13,17 @@
   width: 100%;
 }
 
-.fw-100 {
-  font-weight: 100;
+@for $i from 1 through 10 {
+  .fw-#{$i * 100} {
+    font-weight: #{$i * 100};
+  }
 }
-.fw-200 {
-  font-weight: 200;
-}
-.fw-300 {
-  font-weight: 300;
-}
-.fw-400 {
-  font-weight: 400;
-}
-.fw-500 {
-  font-weight: 500;
-}
-.fw-600 {
-  font-weight: 600;
-}
-.fw-700 {
-  font-weight: 700;
-}
-.fw-800 {
-  font-weight: 800;
-}
-.fw-900 {
-  font-weight: 900;
-}
-.fw-1000 {
-  font-weight: 1000;
+
+@for $i from 1 through 20 {
+  .gap-#{$i * 5} {
+    height: #{$i * 5}px;
+    min-height: #{$i * 5}px;
+  }
 }
 
 .language-text {
@@ -53,8 +35,8 @@
     .code {
       pre {
         code {
-          font-size: 12px;
-          line-height: 1;
+          font-size: 13px;
+          line-height: 19px;
           color: #000;
         }
       }
