@@ -107,3 +107,5 @@ homebrew 를 이용해서도 사용할수있다.
   - 사용하고 싶은 서비스 플랜이 있다면 결제를 하고 사용을 하면 된다.
 
 ### Ngrok 은 회원가입도 해야대고 다운로드 해야되고 유료다. Localtunnel 로 요런 불편함을 없애보자!
+
+> [localhost 외부 공개(2) localtunnel]({{ site.url }}/articles/2021-10/local-deploy-2)
